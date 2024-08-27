@@ -1,5 +1,5 @@
 # musers
-hier habe ich das Befehl users unter Linux programiert.
+Hier habe ich das users-Kommando unter Linux programmiert.
 
-für diese Code habe ich freeBSD Docko geschut und die ganze Code die mit C Spache entwickelt wurde durch gelesen.(https://github.com/openbsd/src/blob/master/usr.bin/users/users.c) 
-dann habe ich mich bewusst von welsche Daten und wie wurde diese users App seine Entry abglesen
+Für diesen Code habe ich die FreeBSD-Dokumentation genutzt und den gesamten Quellcode, der in C entwickelt wurde, durchgelesen (https://github.com/openbsd/src/blob/master/usr.bin/users/users.c). 
+Dabei habe ich bewusst untersucht, welche Daten das users-Kommando verwendet und wie es die Einträge abliest.
