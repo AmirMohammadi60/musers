@@ -1,5 +1,5 @@
 # musers
-Hier habe ich das users-Kommando unter Linux entdeckt.
+So habe ich das users-Kommando unter Linux entdeckt.
 
 Für diesen Code habe ich die FreeBSD-Dokumentation genutzt und den gesamten Quellcode, der in C entwickelt wurde, durchgelesen. Hier ist Repository: https://github.com/openbsd/src/blob/master/usr.bin/users/users.c
 
