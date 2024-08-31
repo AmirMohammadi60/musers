@@ -1,5 +1,7 @@
 # musers
-hier habe ich das Befehl users unter Linux programiert.
+So habe ich das users-Kommando unter Linux entdeckt.
 
-für diese Code habe ich freeBSD Docko geschut und die ganze Code die mit C Spache entwickelt wurde durch gelesen.(https://github.com/openbsd/src/blob/master/usr.bin/users/users.c) 
-dann habe ich mich bewusst von welsche Daten und wie wurde diese users App seine Entry abglesen
+Für diesen Code habe ich die FreeBSD-Dokumentation genutzt und den gesamten Quellcode, der in C entwickelt wurde, durchgelesen. Hier ist Repository: https://github.com/openbsd/src/blob/master/usr.bin/users/users.c
+
+Dabei habe ich bewusst untersucht, welche Daten das users-Kommando verwendet und wie es die Einträge in FHS abliest. ('/var/run/utmp')
+Wichtig ist, dass es(utmp Datai) sich um eine Binärdatei handelt, bei der jede Zeile den Benutzernamen, das Terminal und den Host enthält. Das Programm muss sicherstellen, dass diese Informationen korrekt aus der Datei ausgelesen werden.  
