@@ -30,21 +30,15 @@ with open(file_path, 'rb') as f:
       ##############################################################################################################################################################################################                                                                                                                                                                                             
        
         timestamp = entry[8] # Hier wird angenommen, dass entry eine Liste oder ein Tupel ist, und das 9. Element (entry[8], da Indexe bei 0 beginnen) enthält den Unix-Zeitstempel                
-         Time = time.ctime(timestamp) # wandelt einen Unix-Zeitstempel in eine lesbare Zeichenkette um, die das Datum und die Uhrzeit darstellt.
+        Time = time.ctime(timestamp) # wandelt einen Unix-Zeitstempel in eine lesbare Zeichenkette um, die das Datum und die Uhrzeit darstellt.
 
-<<<<<<< HEAD
-        timestamp = entry[8]
-        Time = time.ctime(timestamp)
-        if user and user not in ["runlevel", "reboot"]:
-         if host and host not in ["login screen"]:
-             print(f"{user:<10} {host:<10} {terminal:<10} {Time}")
-=======
+
       ###########################################################################
         if user and user not in ["runlevel", "reboot"]:                         #
          if host and host not in ["login screen"]:                              # überprüft Bedingungen für Variablen user und host, und wenn diese Bedingungen erfüllt sind, wird eine formatierte Ausgabe erzeugt. Hier ist eine detaillierte Erklärung:                                                                   
              print(f"{user:<10} {host:<12} {terminal:<10} {Time}")              #
       ###########################################################################       
->>>>>>> 5f32f1a8afcffc3bab5d746b2ee61a21798761c1
+
 
 
 
