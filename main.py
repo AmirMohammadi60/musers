@@ -8,7 +8,7 @@ utmp_size = struct.calcsize(utmp_format)
 file_path = '/var/run/utmp'
 
 with open(file_path, 'rb') as f:
-    print(f"{'User':<10} {'Host':<12} {'Terminal':<10} {'Time'}")
+    print(f"{'User':<10} {'Host':<10} {'Terminal':<10} {'Time'}")
     while True:
         data = f.read(utmp_size)
         if not data:
@@ -27,7 +27,7 @@ with open(file_path, 'rb') as f:
         Time = time.ctime(timestamp)
         if user and user not in ["runlevel", "reboot"]:
          if host and host not in ["login screen"]:
-             print(f"{user:<10} {host:<12} {terminal:<10} {Time}")
+             print(f"{user:<10} {host:<10} {terminal:<10} {Time}")
 
 
 
